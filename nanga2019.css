@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  background-color: #fff;
+  margin: 0;
+}
+
+.boeder_left {
+  position: fixed;
+  width: 20px;
+  height: 100vh;
+  background-color: #16FFC4;
+  left: 0px;
+  top: 0px;
+  z-index: 9999;
+}
+
+.boeder_right {
+  position: fixed;
+  width: 20px;
+  height: 100vh;
+  background-color: #16FFC4;
+  right: 0px;
+  bottom: 0px;
+  z-index: 9999;
+}
+
+.boeder_top {
+  position: fixed;
+  width: 100vw;
+  height: 20px;
+  background-color: #16FFC4;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+}
+
+.boeder_bottom {
+  position: fixed;
+  width: 100vw;
+  height: 20px;
+  background-color: #16FFC4;
+  bottom: 0px;
+  left: 0px;
+  z-index: 9999;
+}
+
+.line-through,
+.navigation .links .link-active::after,
+.navigation .links h2::after {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 1px;
+  left: -10%;
+  top: 55%;
+  background-color: #0060e6;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+bg .navigation {
+  overflow: hidden;
+  position: fixed;
+}
+
+.navigation .hamburger-wrapper {
+  position: fixed;
+  top: 35px;
+  left: 35px;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.navigation .hamburger {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  top: 8px;
+  -webkit-transition: background 300ms ease-in-out 100ms;
+  -moz-transition: background 300ms ease-in-out 100ms;
+  transition: background 300ms ease-in-out 100ms;
+  background-color: #333;
+}
+
+.navigation .hamburger::after,
+.navigation .hamburger::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  background-color: #333;
+  transform-origin: center;
+}
+
+.navigation .hamburger::after {
+  top: 8px;
+  -webkit-transition: top 100ms ease-in-out 300ms, -webkit-transform 100ms ease-in-out, background 300ms ease-in-out 300ms;
+  -moz-transition: top 100ms ease-in-out 300ms, -moz-transform 100ms ease-in-out, background 300ms ease-in-out 300ms;
+  transition: top 100ms ease-in-out 300ms, transform 100ms ease-in-out, background 300ms ease-in-out 300ms;
+}
+
+.navigation .hamburger::before {
+  bottom: 8px;
+  -webkit-transition: bottom 100ms ease-in-out 300ms, -webkit-transform 100ms ease-in-out, background 300ms ease-in-out 300ms;
+  -moz-transition: bottom 100ms ease-in-out 300ms, -moz-transform 100ms ease-in-out, background 300ms ease-in-out 300ms;
+  transition: bottom 100ms ease-in-out 300ms, transform 100ms ease-in-out, background 300ms ease-in-out 300ms;
+}
+
+.navigation .hamburger-open {
+  background: rgba(255, 255, 255, 0);
+}
+
+.navigation .hamburger-open::before {
+  bottom: 0;
+  background-color: #0060e6;
+  -webkit-transition: bottom 100ms ease-in-out, -webkit-transform 100ms ease-in-out 300ms, background 100ms ease-in-out 100ms;
+  -moz-transition: bottom 100ms ease-in-out, -moz-transform 100ms ease-in-out 300ms, background 100ms ease-in-out 100ms;
+  transition: bottom 100ms ease-in-out, transform 100ms ease-in-out 300ms, background 100ms ease-in-out 100ms;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.navigation .hamburger-open::after {
+  top: 0;
+  background-color: #0060e6;
+  -webkit-transition: top 100ms ease-in-out, -webkit-transform 100ms ease-in-out 300ms, background 100ms ease-in-out 100ms;
+  -moz-transition: top 100ms ease-in-out, -moz-transform 100ms ease-in-out 300ms, background 100ms ease-in-out 100ms;
+  transition: top 100ms ease-in-out, transform 100ms ease-in-out 300ms, background 100ms ease-in-out 100ms;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.navigation .background {
+  position: fixed;
+  height: 0;
+  width: 0;
+  left: -50%;
+  top: -50%;
+  border-radius: 100%;
+  background-color: #16FFC4;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  z-index: 999;
+}
+
+.navigation .background-open {
+  left: -50%;
+  top: -50%;
+  width: 180%;
+  height: 180%;
+  overflow: hidden;
+  background-color: #16FFC4;
+  z-index: 999;
+}
+
+.navigation .links {
+  position: fixed;
+  text-align: center;
+  top: 60%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.navigation .links h2 {
+  position: relative;
+  cursor: default;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  margin-bottom: 80px;
+  font-weight: 100;
+}
+
+.navigation .links h2::after {
+  width: 0;
+  -webkit-transition: width 300ms ease;
+  -moz-transition: width 300ms ease;
+  transition: width 300ms ease;
+}
+
+.navigation .links h2:hover:after {
+  width: 120%;
+  color: #FFA5B5;
+}
+
+.navigation .links-open {
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+  -webkit-transition: all 400ms ease 400ms;
+  -moz-transition: all 400ms ease 400ms;
+  transition: all 400ms ease 400ms;
+}
+
+.navigation .links-open h2 {
+  cursor: pointer;
+}
+
+
+@media screen and (max-height: 380px) {
+  .navigation .links h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width:480px) {
+
+  /*　画面サイズが480px以下からはここを読み込む　*/
+  .boeder_left {
+    position: fixed;
+    width: 20px;
+    height: 100vh;
+    background: #16FFC4;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+  }
+
+  .boeder_right {
+    position: fixed;
+    width: 20px;
+    height: 100vh;
+    background-color: #16FFC4;
+    right: 0px;
+    bottom: 0px;
+    z-index: 9999;
+  }
+
+  .boeder_top {
+    position: fixed;
+    width: 100vw;
+    height: 20px;
+    background-color: #16FFC4;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+  }
+
+  .boeder_bottom {
+    position: fixed;
+    width: 100vw;
+    height: 20px;
+    background-color: #16FFC4;
+    bottom: 0px;
+    left: 0px;
+    z-index: 9999;
+  }
+}
+
+@media screen and (max-width:320px) {
+
+  /*　画面サイズが320px以下からはここを読み込む　*/
+  .boeder_left {
+    position: fixed;
+    width: 15px;
+    height: 100vh;
+    background: #16FFC4 top: 0px;
+    z-index: 9999;
+  }
+
+  .boeder_right {
+    position: fixed;
+    width: 15px;
+    height: 100vh;
+    background-color: #16FFC4;
+    right: 0px;
+    bottom: 0px;
+    z-index: 9999;
+  }
+
+  .boeder_top {
+    position: fixed;
+    width: 100vw;
+    height: 15px;
+    background-color: #16FFC4;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+  }
+
+  .boeder_bottom {
+    position: fixed;
+    width: 100vw;
+    height: 15px;
+    background-color: #16FFC4;
+    bottom: 0px;
+    left: 0px;
+    z-index: 9999;
+  }
+}
+
+/*  ↓↓↓ここからCSSアニメーション↓↓↓　　*/
