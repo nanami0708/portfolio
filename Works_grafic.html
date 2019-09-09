@@ -1,0 +1,1067 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Works_grafics</title>
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Caveat|Josefin+Sans|Roboto+Mono|Montserrat|Inconsolata|Lekton|Josefin+Sans" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="msapplication-config" content="image/browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="image/mstile-144x144.png">
+  <meta name="theme-color" content="#17E2D3">
+  <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon-180x180-precomposed.png">
+  <link rel="mask-icon" href="image/safari-icon.svg" color="#555" />
+  <link rel="icon" type="image/png" sizes="192x192" href="image/android-chrome-192x192.png">
+  <link rel="manifest" href="image/manifest.json">
+
+  <link href="css/grafics.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/mofing.css">
+  <style>
+    /*canvas*/
+
+    @media screen and (min-width:320px) and (max-width:766px) {
+
+      /*　画面サイズが768pxから1024pxまではここを読み込む　　iPhone*/
+      .intro-animation {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit- transform: translateY(-50%) translateX(-50%);
+        width: 40px;
+        height: 40px;
+      }
+
+      .intro-animation img {
+        width: 40px;
+      }
+
+      @keyframes intro-fadein1 {
+        0% {
+          opacity: 0;
+          transform: translateY(40px) translateX(-120px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(40px)translateX(-120px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(-120px);
+        }
+
+        60% {
+          opacity: 1;
+          transform: translateX(-120px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes intro-fadein2 {
+        0% {
+          opacity: 0;
+          transform: translateY(-40px) translateX(-70px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(-40px)translateX(-70px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(-70px);
+        }
+
+        60% {
+          opacity: 1;
+          transform: translateX(-70px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes intro-fadein3 {
+        0% {
+          opacity: 0;
+          transform: translateY(40px) translateX(-20px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(40px)translateX(-20px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(-20px);
+        }
+
+        60% {
+          transform: translateX(-20px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes intro-fadein4 {
+        0% {
+          opacity: 0;
+          transform: translateY(-40px) translateX(30px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(-40px)translateX(30px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(30px);
+        }
+
+        60% {
+          transform: translateX(30px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes intro-fadein5 {
+        0% {
+          opacity: 0;
+          transform: translateY(40px) translateX(80px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(40px)translateX(80px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(80px);
+        }
+
+        60% {
+          transform: translateX(80px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes intro-fadein6 {
+        0% {
+          opacity: 0;
+          transform: translateY(-40px) translateX(120px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(-40px)translateX(120px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(120px);
+        }
+
+        60% {
+          transform: translateX(120px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+
+      /*　画面サイズが768pxから1024pxまではここを読み込む　　iPad*/
+      .intro-animation {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit- transform: translateY(-50%) translateX(-50%);
+        width: 70px;
+        height: 70px;
+      }
+
+      .intro-animation img {
+        width: 70px;
+      }
+
+      @keyframes intro-fadein1 {
+        0% {
+          opacity: 0;
+          transform: translateY(40px) translateX(-250px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(40px)translateX(-250px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(-250px);
+        }
+
+        60% {
+          opacity: 1;
+          transform: translateX(-250px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes intro-fadein2 {
+        0% {
+          opacity: 0;
+          transform: translateY(-40px) translateX(-150px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(-40px)translateX(-150px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(-150px);
+        }
+
+        60% {
+          opacity: 1;
+          transform: translateX(-150px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes intro-fadein3 {
+        0% {
+          opacity: 0;
+          transform: translateY(40px) translateX(-50px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(40px)translateX(-50px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(-50px);
+        }
+
+        60% {
+          transform: translateX(-50px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes intro-fadein4 {
+        0% {
+          opacity: 0;
+          transform: translateY(-40px) translateX(50px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(-40px)translateX(50px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(50px);
+        }
+
+        60% {
+          transform: translateX(50px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes intro-fadein5 {
+        0% {
+          opacity: 0;
+          transform: translateY(40px) translateX(150px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(40px)translateX(150px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(150px);
+        }
+
+        60% {
+          transform: translateX(150px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes intro-fadein6 {
+        0% {
+          opacity: 0;
+          transform: translateY(-40px) translateX(250px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(-40px)translateX(250px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(250px);
+        }
+
+        60% {
+          transform: translateX(250px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+
+    @media screen and (min-width:1025px) {
+
+      /*　画面サイズが1024pxからはここを読み込む　pc */
+
+      .intro-animation {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit- transform: translateY(-50%) translateX(-50%);
+        width: 100px;
+        height: 100px;
+      }
+
+      @keyframes intro-fadein1 {
+        0% {
+          opacity: 0;
+          transform: translateY(40px) translateX(-400px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(40px)translateX(-400px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(-400px);
+        }
+
+        60% {
+          opacity: 1;
+          transform: translateX(-400px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes intro-fadein2 {
+        0% {
+          opacity: 0;
+          transform: translateY(-40px) translateX(-240px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(-40px)translateX(-240px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(-240px);
+        }
+
+        60% {
+          opacity: 1;
+          transform: translateX(-240px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes intro-fadein3 {
+        0% {
+          opacity: 0;
+          transform: translateY(40px) translateX(-80px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(40px)translateX(-80px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(-80px);
+        }
+
+        60% {
+          transform: translateX(-80px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes intro-fadein4 {
+        0% {
+          opacity: 0;
+          transform: translateY(-40px) translateX(80px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(-40px)translateX(80px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(80px);
+        }
+
+        60% {
+          transform: translateX(80px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes intro-fadein5 {
+        0% {
+          opacity: 0;
+          transform: translateY(40px) translateX(240px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(40px)translateX(240px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(240px);
+        }
+
+        60% {
+          transform: translateX(240px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes intro-fadein6 {
+        0% {
+          opacity: 0;
+          transform: translateY(-40px) translateX(400px);
+        }
+
+        25% {
+          opacity: 0;
+          transform: translateY(-40px)translateX(400px);
+        }
+
+        50% {
+          opacity: 1;
+          transform: translateY(0)translateX(400px);
+        }
+
+        60% {
+          transform: translateX(400px);
+        }
+
+        75% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+    }
+
+    .intro-svg1 {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      animation-name: intro-fadein1;
+      animation-duration: 8s;
+      opacity: 1;
+    }
+
+    .intro-svg2 {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      animation-name: intro-fadein2;
+      animation-duration: 8s;
+      opacity: 1;
+    }
+
+    .intro-svg3 {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      animation-name: intro-fadein3;
+      animation-duration: 8s;
+      opacity: 1;
+    }
+
+    .intro-svg4 {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      animation-name: intro-fadein4;
+      animation-duration: 8s;
+      opacity: 1;
+    }
+
+    .intro-svg5 {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      animation-name: intro-fadein5;
+      animation-duration: 8s;
+      opacity: 1;
+    }
+
+    .intro-svg6 {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      animation-name: intro-fadein6;
+      animation-duration: 8s;
+      opacity: 1;
+    }
+
+    @media screen and (min-width:320px) and (max-width:766px) {
+      .intro-svg1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        animation-name: intro-fadein1;
+        animation-duration: 8s;
+        opacity: 0;
+      }
+
+      .intro-svg2 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        animation-name: intro-fadein2;
+        animation-duration: 8s;
+        opacity: 0;
+      }
+
+      .intro-svg3 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        animation-name: intro-fadein3;
+        animation-duration: 8s;
+        opacity: 0;
+      }
+
+      .intro-svg4 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        animation-name: intro-fadein4;
+        animation-duration: 8s;
+        opacity: 0;
+      }
+
+      .intro-svg5 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        animation-name: intro-fadein5;
+        animation-duration: 8s;
+        opacity: 0;
+      }
+
+      .intro-svg6 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        animation-name: intro-fadein6;
+        animation-duration: 8s;
+        opacity: 0;
+      }
+    }
+
+    /*animation*/
+    /*sns*/
+
+    .sns_box {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      bottom: 40px;
+      left: 50%;
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      margin: auto;
+      height: 44px;
+      min-width: 88px;
+    }
+
+    .sns_button {
+      float: left;
+      box-shadow: inset 0 0 0 2px #fff;
+      border-radius: 100%;
+      -moz-transition: all 280ms ease;
+      -o-transition: all 280ms ease;
+      -webkit-transition: all 280ms ease;
+      transition: all 280ms ease;
+    }
+
+    .sns_button a {
+      display: table-cell;
+      width: 44px;
+      height: 44px;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+      -moz-transition: all 280ms ease;
+      -o-transition: all 280ms ease;
+      -webkit-transition: all 280ms ease;
+      transition: all 280ms ease;
+    }
+
+    .sns_button i {
+      font-size: 20px;
+      vertical-align: middle;
+    }
+
+    .sns_button:hover {
+      box-shadow: inset 0 0 0 22px #fff;
+    }
+
+    .sns_button+.sns_button {
+      margin: 0 0 0 24px;
+    }
+
+    .twitter img {
+      width: 35px;
+      height: 35px;
+    }
+
+    .facebook img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .twitter img:hover {
+      color: #1B95E0;
+    }
+
+    .facebook img:hover {
+      color: #3B5999;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="cursor"></div>
+  <div class="follower"></div>
+
+  <div class="l-wrapper">
+    <div class="l-loading">
+
+      <div class="l-loading-inner">
+        <div class="loading">
+          <div class="loading-text">
+            <span class="loading-text-words">L</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words">I</span>
+            <span class="loading-text-words">N</span>
+            <span class="loading-text-words">G</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="c">
+        <svg class="shape" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1440 800" xmlns:pathdata="http://www.codrops.com/">
+          <path d="M 73.3,178.6 C 101.7,363.8 76.38,735 118.7,813.8 161,892.7 327.3,946.7 381.1,853.3 434.9,759.9 427.2,488.9 436.8,341.5 443.3,241.3 447.3,33.05 516.1,36.19 574.9,38.88 611.6,214.9 622.3,429.7 633,644.6 614.7,796.1 688.1,849 761.6,901.8 860.7,873.7 897.6,850 982.3,795.5 951.2,639.3 961.1,506.1 970.9,372.9 958.5,43.53 1023,43.47 1063,43.43 1085,173.6 1095,370.7 1105,567.8 1082,804.3 1165,842.6 1197,857.5 1304,901 1342,833 1380,765 1354,413.7 1379,156.2 1407,-137.5 1719,-12.96 1719,-12.96 L -53.5,-44.66 C -53.5,-44.66 44.91,-6.65 73.3,178.6 Z" pathdata:id="M 105.3,190.6 C 159.7,353.8 143.2,774.2 149.1,779.5 155,784.8 159.4,782 164.8,778.2 170.2,774.4 168.9,242.8 240.3,125 311.7,7.205 430.7,2.307 564.2,13.56 707.9,25.67 806,166.3 800.5,376 804.7,587.3 801.2,773.9 807.1,782.7 813,791.4 816.8,792.7 821.4,786 826.4,778.8 819.4,566.3 820.3,498.1 821.2,429.9 781.4,95.51 992.5,74.58 1108,63.14 1235,166.4 1250,359.4 1265,552.4 1248,763.7 1271,781.4 1277,786 1281,786.2 1286,779.7 1292,773.2 1260,251.3 1355,103.9 1441,-30.35 1610,-117.6 1610,-117.6 L -110.1,-132.3 C -110.1,-132.3 50.91,27.35 105.3,190.6 Z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="navigation">
+    <div class="background color"></div>
+    <div class="hamburger-wrapper cursorbig">
+      <div class="hamburger"></div>
+    </div>
+    <div class="links">
+      <a href="index.html" class="cursorbig">
+        <h2 data-link="home">home</h2>
+      </a>
+      <a href="Works_grafic.html" class="cursorbig">
+        <h2 data-link="work">works</h2>
+      </a>
+      <a href="weeklyDesign.html" class="cursorbig">
+        <h2 data-link="weekly">weekly</h2>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="toumei">
+    <h1 class="top_title">WORKS<br>2015-2019</h1>
+  </div>
+
+  <div class="top_border">
+  </div>
+
+  <div class="intro-animation">
+    <div class="intro-svg1"><img src="SVG/N.svg" width="100px"></div>
+    <div class="intro-svg2"><img src="SVG/A.svg" width="100px"></div>
+    <div class="intro-svg3"><img src="SVG/N.svg" width="100px"></div>
+    <div class="intro-svg4"><img src="SVG/A.svg" width="100px"></div>
+    <div class="intro-svg5"><img src="SVG/M.svg" width="100px"></div>
+    <div class="intro-svg6"><img src="SVG/I.svg" width="100px"></div>
+  </div>
+
+  <div class="hello"></div>
+
+  <div class="works_container">
+    <div class="graphics_title slide-bottom" data-plugin-options='{"reverse": false}'>
+      <p>Graphics</p>
+    </div>
+    <div class="graphics_contents">
+
+      <div class="slide-bottom flex_item" data-plugin-options='{"reverse": false}'><img src="image/weekly_logo2.png" width="300" alt="" /></div>
+      <div class="slide-bottom flex_item" data-plugin-options='{"reverse": false}'><img src="image/sns_icon.png" width="300" alt="" /></div>
+      <div class="slide-bottom flex_item" data-plugin-options='{"reverse": false}'><img src="image/kikanshi_open.png" width="300" alt="" /></div>
+      <div class="slide-bottom flex_item" data-plugin-options='{"reverse": false}'><img src="image/kikanshi_close.png" height="300" alt="" /></div>
+      <div class="slide-bottom flex_item" data-plugin-options='{"reverse": false}'><img src="image/meishi3d.png" width="300" alt="" /></div>
+      <div class="slide-bottom flex_item" data-plugin-options='{"reverse": false}'><img src="image/record1.png" width="300" alt="" /></div>
+      <div class="slide-bottom flex_item" data-plugin-options='{"reverse": false}'><img src="image/3dnenga2017.png" width="300" alt="" /></div>
+      <div class="slide-bottom flex_item" data-plugin-options='{"reverse": false}'><img src="image/2019nenga.png" height="300" alt="" /></div>
+      <div class="slide-bottom flex_item" data-plugin-options='{"reverse": false}'><img src="image/nengalitver.png" width="300" alt="" /></div>
+
+    </div>
+    <div class="movies_title slide-bottom" data-plugin-options='{"reverse": false}'>
+      <p>Movies</p>
+    </div>
+    <div class="movies_contents">
+      <div class="movie-wrap slide-bottom" data-plugin-options='{"reverse": false}'>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/x3Mqq3O_g2w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="movie-wrap slide-bottom" data-plugin-options='{"reverse": false}'>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/sEvJf5C5yno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div class="movie-wrap slide-bottom" data-plugin-options='{"reverse": false}'>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/1HsLJDMM53c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="iPhoneApp_title">
+      <p class="slide-bottom" data-plugin-options='{"reverse": false}'>iPhone App</p>
+    </div>
+    <div class="iPhoneApp_contents slide-bottom" data-plugin-options='{"reverse": false}'>
+      <img src="image/comming_soon.png" width="320">
+    </div>
+    <div class="other_title slide-bottom" data-plugin-options='{"reverse": false}'>
+      <p>LINE Sticker/suzuri</p>
+    </div>
+    <div class="other_contents">
+      <a href="https://line.me/S/sticker/4073265" class="cursorbig slide-bottom" data-plugin-options='{"reverse": false}'><img src="image/Line.png" width="320"></a>
+      <a href="https://suzuri.jp/nana_min" class="cursorbig slide-bottom" data-plugin-options='{"reverse": false}'><img src="image/suzuri.png" width="320"></a>
+    </div>
+
+  </div>
+
+  <div class="boeder_left"></div>
+  <div class="boeder_right"></div>
+  <div class="boeder_top"></div>
+
+  <div class="footer">
+    <div class="footer">
+      <div class="sns_box">
+        <div class="sns_button twitter cursorbig">
+          <a href="https://twitter.com/i_nanana_i" title="Tweet"><img src="image/twitter.svg" alt="" /></a>
+        </div>
+        <div class="sns_button facebook cursorbig">
+          <a href="https://www.facebook.com/nanami.mizuno.712" title="Facebook"><img src="image/facebook.svg" alt="" /></a>
+        </div>
+      </div>
+      <p class="allright">© MIZUNONANAMI All rights reserved.</p>
+    </div>
+  </div>
+
+
+  <script src="lib/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="lib/anime.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js'></script>
+
+  <script>
+    var
+      cursor = $(".cursor"),
+      follower = $(".follower"),
+      cWidth = 8, //カーソルの大きさ
+      fWidth = 40, //フォロワーの大きさ
+      delay = 10, //数字を大きくするとフォロワーがより遅れて来る
+      mouseX = 0, //マウスのX座標
+      mouseY = 0, //マウスのY座標
+      posX = 0, //フォロワーのX座標
+      posY = 0; //フォロワーのX座標
+
+    //カーソルの遅延アニメーション
+    //ほんの少ーーーしだけ遅延させる 0.001秒
+    TweenMax.to({}, .001, {
+      repeat: -1,
+      onRepeat: function() {
+        posX += (mouseX - posX) / delay;
+        posY += (mouseY - posY) / delay;
+
+        TweenMax.set(follower, {
+          css: {
+            left: posX - fWidth / 2,
+            top: posY - fWidth / 2
+          }
+        });
+        TweenMax.set(cursor, {
+          css: {
+            left: mouseX - cWidth / 2,
+            top: mouseY - cWidth / 2
+          }
+        });
+      }
+    });
+
+    //マウス座標を取得
+    $(document).on("mousemove", function(e) {
+      mouseX = e.pageX;
+      mouseY = e.pageY;
+    });
+
+    $(".cursorbig").on({
+      "mouseenter": function() {
+        cursor.addClass("is-active");
+        follower.addClass("is-active");
+      },
+      "mouseleave": function() {
+        cursor.removeClass("is-active");
+        follower.removeClass("is-active");
+      }
+    });
+    //# sourceURL=pen.js
+
+  </script>
+
+  <script src="lib/jquery.fadethis.min.js"></script>
+  <script>
+    $(window).fadeThis();
+
+  </script>
+
+  <!--
+  <script>
+    $(function() {
+      $(window).scroll(function() {
+        alert("test");
+        var s = $(window).scrollTop();
+        var w = 50 - s / 2;
+        $('.top_border').css('border-width', w + 'px');
+      });
+    });
+  </script>
+-->
+  <script>
+    $(function() {
+      var nav = $('.top'),
+        offset = nav.offset();
+
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > offset.top - 20) {
+          nav.addClass('fixed');
+        } else {
+          nav.removeClass('fixed');
+        }
+      });
+    });
+
+  </script>
+
+  <script>
+    $(function() {
+      var $bg = $('.background');
+      var $hamWrapper = $('.hamburger-wrapper');
+      var $hamburger = $hamWrapper.find('.hamburger');
+      var $links = $('.links');
+      var $currLink = $('.curr-link').find('span');
+      var activeLink = 'work';
+
+      $links.find('h2').eq(1).addClass('link-active');
+
+      $hamWrapper.on('click', function() {
+        $bg.toggleClass('background-open');
+        $hamburger.toggleClass('hamburger-open');
+        $links.toggleClass('links-open');
+      });
+
+      $links.find('h2').on('click', function() {
+        activeLink = $(this).data('link');
+        $currLink.text(activeLink);
+        $links.find('h2').removeClass('link-active');
+        $(this).addClass('link-active');
+        $hamWrapper.click();
+      });
+    });
+    //# sourceURL=pen.js
+
+  </script>
+
+
+</body>
+
+</html>

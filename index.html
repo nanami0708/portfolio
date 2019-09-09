@@ -1,0 +1,590 @@
+<!doctype html>
+<html>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# prefixwebsite: http://ogp.me/ns/ prefixwebsite#">
+  <meta charset="UTF-8">
+  <title>mizuno nanami | 水野七海のポートフォリオサイト</title>
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Caveat|Josefin+Sans|Roboto+Mono|Montserrat|Inconsolata|Lekton|Questrial" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet" type="text/css">
+  <!--↓slider↓-->
+  <link rel='stylesheet' href='css/flickity.css'>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta name="robots" content="index,follow">
+  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="msapplication-config" content="image/browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="image/mstile-144x144.png">
+  <meta name="theme-color" content="#17E2D3">
+  <!--  サムネイル-->
+
+  <meta property="og:url" content="nana-unique.com" />
+
+  <meta property="og:type" content="website" />
+
+  <meta property="og:title" content="ななみのportpofio" />
+
+  <meta property="og:image" content="image/portfolio.jpg" />
+
+  <!--  サムネイル-->
+  <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon-180x180-precomposed.png">
+  <link rel="mask-icon" href="image/safari-icon.svg" color="#555" />
+  <link rel="icon" type="image/png" sizes="192x192" href="image/android-chrome-192x192.png">
+  <link rel="manifest" href="image/manifest.json">
+
+  <link rel="stylesheet" href="css/mofing.css">
+
+  <style>
+    /* external css: flickity.css */
+    .carousel {
+      width: 50vw;
+      min-width: 310px;
+      min-height: 310px;
+      margin: auto;
+      z-index: 10;
+    }
+
+    .carousel-cell1 {
+      width: 30vw;
+      height: 30vw;
+      max-width: 400px;
+      max-height: 400px;
+      min-width: 270px;
+      min-height: 270px;
+      margin-right: 10vw;
+      background-image: url(image/meishi3d.png);
+      background-size: cover;
+      border-radius: 8px;
+      counter-increment: carousel-cell;
+    }
+
+    .carousel-cell2 {
+      width: 30vw;
+      height: 30vw;
+      max-width: 400px;
+      max-height: 400px;
+      min-width: 270px;
+      min-height: 270px;
+      margin-right: 10vw;
+      background-image: url(image/kikanshi_open.png);
+      background-size: cover;
+      border-radius: 8px;
+      counter-increment: carousel-cell;
+    }
+
+    .carousel-cell3 {
+      width: 30vw;
+      height: 30vw;
+      max-width: 400px;
+      max-height: 400px;
+      min-width: 270px;
+      min-height: 270px;
+      margin-right: 10vw;
+      background-image: url(image/3dnenga2017.png);
+      background-size: cover;
+      border-radius: 8px;
+      counter-increment: carousel-cell;
+    }
+
+    .carousel-cell4 {
+      width: 30vw;
+      height: 30vw;
+      max-width: 400px;
+      max-height: 400px;
+      min-width: 270px;
+      min-height: 270px;
+      margin-right: 10vw;
+      background-image: url(image/record1.png);
+      background-size: cover;
+      border-radius: 8px;
+      counter-increment: carousel-cell;
+    }
+
+    .carousel-cell5 {
+      width: 30vw;
+      height: 30vw;
+      max-width: 400px;
+      max-height: 400px;
+      min-width: 270px;
+      min-height: 270px;
+      margin-right: 10vw;
+      background-image: url(image/weekly_logo1.png);
+      background-size: cover;
+      border-radius: 8px;
+      counter-increment: carousel-cell;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+      display: block;
+      text-align: center;
+      content: counter(carousel-cell);
+      line-height: 200px;
+      font-size: 80px;
+      color: white;
+    }
+
+    /* gallery focus */
+    .flickity-enabled:focus .flickity-viewport {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+    }
+
+    .red {
+      background: #FF355E;
+    }
+
+    /*sns*/
+
+    .sns_box {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      bottom: 40px;
+      left: 50%;
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      margin: auto;
+      height: 44px;
+      min-width: 88px;
+    }
+
+    .sns_button {
+      float: left;
+      box-shadow: inset 0 0 0 2px #fff;
+      border-radius: 100%;
+      -moz-transition: all 280ms ease;
+      -o-transition: all 280ms ease;
+      -webkit-transition: all 280ms ease;
+      transition: all 280ms ease;
+    }
+
+    .sns_button a {
+      display: table-cell;
+      width: 44px;
+      height: 44px;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+      -moz-transition: all 280ms ease;
+      -o-transition: all 280ms ease;
+      -webkit-transition: all 280ms ease;
+      transition: all 280ms ease;
+    }
+
+    .sns_button i {
+      font-size: 20px;
+      vertical-align: middle;
+    }
+
+    .sns_button:hover {
+      box-shadow: inset 0 0 0 22px #fff;
+    }
+
+    .sns_button+.sns_button {
+      margin: 0 0 0 24px;
+    }
+
+    .twitter img {
+      width: 35px;
+      height: 35px;
+    }
+
+    .facebook img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .twitter img:hover {
+      color: #1B95E0;
+    }
+
+    .facebook img:hover {
+      color: #3B5999;
+    }
+
+  </style>
+  <!--↑slider↑-->
+  <!--<script>
+  $(function(){
+           $(window).scroll(function(){
+         //topからbottomの間はこれ
+        if ($(window).scrollTop() > $(".middle").offset().top &&　$(window).scrollTop() < $(".bottom").offset().top){
+             $(".boeder_left").css("background-color", "#fff");
+        }//bottomより進んだらこれ
+             else if($(window).scrollTop() > $(".bottom").offset().top){
+             $(".boeder_left").css("background-color", "#ff0000");
+        }else//それ以外（つまりセクション１である場合）はこれ
+             $(".boeder_left).css("background-color", "#000000");
+              });
+        });
+</script>
+<script>
+jQuery(function(){
+   jQuery(window).scroll(function(){
+      var obj_t_pos = jQuery('.color').offset().top;
+      var scr_count = jQuery(document).scrollTop() + (window.innerHeight/2); // ディスプレイの半分の高さを追加
+      if(scr_count > obj_t_pos){
+         jQuery('.color').addClass('red');
+      }else{
+         jQuery('.color').removeClass('red');
+      }
+   })
+})
+</script>-->
+  <script>
+    window.console = window.console || function(t) {};
+
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+
+  </script>
+</head>
+
+<body>
+
+  <div class="cursor"></div>
+  <div class="follower"></div>
+
+  <div class="l-wrapper">
+
+    <div class="l-loading">
+      <div class="l-loading-inner">
+        <div class="loading">
+          <div class="loading-text">
+            <span class="loading-text-words">L</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words">I</span>
+            <span class="loading-text-words">N</span>
+            <span class="loading-text-words">G</span>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="l-loading-inner">
+        <div class="loading">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.37 95.37">
+          <circle class="cls-1" cx="47.68" cy="47.68" r="45.68"/>
+          <path class="cls-2"
+                d="M37.16,60.14A15.76,15.76,0,0,1,27.3,56c-.78-.72-1.55-1.68-.53-2.74.77-.81,1.74-.42,2.49.12,5.06,3.62,10.16,4.63,15.5.53a1.65,1.65,0,0,1,2.46,0c.73.93.07,1.72-.59,2.36A13,13,0,0,1,37.16,60.14Z"/>
+          <path class="cls-2"
+                d="M74.32,34.19c.12,1-.23,1.81-1.07,1.8-2.39,0-3.21-1.94-4-3.76-.31-.76.07-1.74.94-1.68C72.52,30.7,73.34,32.65,74.32,34.19Z"/>
+          <path class="cls-3"
+                d="M54.82,35.69c-3.32,0-5.65,3.64-5.57,8.6.07,4.39,2,6.59,5.72,6.66,4,.08,6.24-2.77,6.21-7.81C61.14,38.91,58.36,35.65,54.82,35.69Z"/>
+          <path class="cls-3"
+                d="M19.35,35.75c-3.92-.09-6.79,3.13-6.75,7.57,0,4.85,2.2,7.59,6,7.63,4,0,6-2.38,5.95-7.39S22.63,35.83,19.35,35.75Z"/>
+          <path class="cls-2"
+                d="M54.73,32.28c-5.24,0-9.16,5.16-9.06,12,.08,6.12,3.79,10.23,9.22,10.22,5.79,0,10-5,9.87-11.85C64.68,37.22,60,32.33,54.73,32.28ZM55,50.95c-3.76-.07-5.66-2.28-5.72-6.66-.08-5,2.26-8.56,5.57-8.6,3.54,0,6.33,3.22,6.36,7.45C61.21,48.18,58.95,51,55,50.95Z"/>
+          <path class="cls-2"
+                d="M19.25,32.62C13.4,32.56,9,37.08,9,43.16c0,6.56,4.3,11.44,10,11.37s9.1-4.05,9.12-10.37C28.16,37,24.87,32.68,19.25,32.62ZM18.59,51c-3.79,0-5.93-2.78-6-7.63,0-4.44,2.83-7.66,6.75-7.57,3.28.07,5.14,2.88,5.18,7.81S22.63,51,18.59,51Z"/>
+          <path class="cls-2"
+                d="M56,45.25c-.42.53-1,.75-1.37.34-1.12-1.16-.59-2.46-.07-3.68a.76.76,0,0,1,1.25-.35C56.84,42.73,56.3,44.05,56,45.25Z"/>
+          <path class="cls-2"
+                d="M19.39,45.25c-.42.53-1,.75-1.37.34-1.12-1.16-.59-2.46-.07-3.68a.76.76,0,0,1,1.25-.35C20.21,42.73,19.66,44.05,19.39,45.25Z"/>
+        </svg>
+    </div>
+  </div> -->
+
+      <div class="shape-wrap">
+        <svg class="shape" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1440 800" xmlns:pathdata="http://www.codrops.com/">
+          <path d="M 73.3,178.6 C 101.7,363.8 76.38,735 118.7,813.8 161,892.7 327.3,946.7 381.1,853.3 434.9,759.9 427.2,488.9 436.8,341.5 443.3,241.3 447.3,33.05 516.1,36.19 574.9,38.88 611.6,214.9 622.3,429.7 633,644.6 614.7,796.1 688.1,849 761.6,901.8 860.7,873.7 897.6,850 982.3,795.5 951.2,639.3 961.1,506.1 970.9,372.9 958.5,43.53 1023,43.47 1063,43.43 1085,173.6 1095,370.7 1105,567.8 1082,804.3 1165,842.6 1197,857.5 1304,901 1342,833 1380,765 1354,413.7 1379,156.2 1407,-137.5 1719,-12.96 1719,-12.96 L -53.5,-44.66 C -53.5,-44.66 44.91,-6.65 73.3,178.6 Z" pathdata:id="M 105.3,190.6 C 159.7,353.8 143.2,774.2 149.1,779.5 155,784.8 159.4,782 164.8,778.2 170.2,774.4 168.9,242.8 240.3,125 311.7,7.205 430.7,2.307 564.2,13.56 707.9,25.67 806,166.3 800.5,376 804.7,587.3 801.2,773.9 807.1,782.7 813,791.4 816.8,792.7 821.4,786 826.4,778.8 819.4,566.3 820.3,498.1 821.2,429.9 781.4,95.51 992.5,74.58 1108,63.14 1235,166.4 1250,359.4 1265,552.4 1248,763.7 1271,781.4 1277,786 1281,786.2 1286,779.7 1292,773.2 1260,251.3 1355,103.9 1441,-30.35 1610,-117.6 1610,-117.6 L -110.1,-132.3 C -110.1,-132.3 50.91,27.35 105.3,190.6 Z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!--  <div class="l-content">-->
+  <div class="navigation">
+    <div class="background color"></div>
+    <div class="hamburger-wrapper cursorbig">
+      <div class="hamburger"></div>
+    </div>
+    <div class="links">
+      <a href="index.html">
+        <h2 data-link="home" class="cursorbig">home</h2>
+      </a>
+      <a href="Works_grafic.html">
+        <h2 data-link="work" class="cursorbig">works</h2>
+      </a>
+      <a href="">
+        <a href="weeklyDesign.html">
+          <h2 data-link="weekly" class="cursorbig">weekly</h2>
+        </a>
+      </a>
+    </div>
+  </div>
+  <section class="fixed bg1">
+    <div class="container">
+      <div class="inner">
+        <div class="flake2 color"></div>
+        <div class="flake3 color"></div>
+        <div class="flake4 color"></div>
+        <div class="flake6 color"></div>
+        <div class="flake7 color"></div>
+        <div class="flake8 color"></div>
+      </div>
+    </div>
+  </section>
+  <!--SVG animation ここから-->
+
+  <!--ロゴ-->
+  <div class="top">
+    <svg version="1.1" id="portfolio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 150" style="enable-background:new 0 0 800 150;" xml:space="preserve">
+      <g class="st0">
+        <path class="st1" d="M0,1.58H21q11.9,0,19,6T47.17,24q0,10.54-7.12,16.85t-18.66,6.3H9.61V84.26H0ZM9.61,38.79H20Q37,38.79,37,24.61A13.45,13.45,0,0,0,32.37,14q-4.59-4-11.86-4H9.61Z" />
+        <path class="st1" d="M92.87,0q13.89,0,21.18,11t7.3,32q0,20.86-7.27,31.87t-21.21,11q-13.83,0-21.12-11T64.45,43Q64.45,22,71.72,11T92.87,0Zm0,77.4q18.28,0,18.28-34.45T92.87,8.44q-8.91,0-13.56,8.93T74.65,43q0,16.81,4.63,25.63T92.87,77.4Z" />
+        <path class="st1" d="M197.81,84.26h-12L161.54,46.7H150.88V84.26h-9.61V1.58h23.38q11.78,0,18.6,5.71t6.83,15.91a20.25,20.25,0,0,1-5,13.45,25,25,0,0,1-13.71,8ZM150.88,38.32H163q7.62,0,12.36-4.13a13.18,13.18,0,0,0,4.75-10.4Q180.12,10,163.24,10H150.88Z" />
+        <path class="st1" d="M267.42,9.38H241.93V84.26h-9.55V9.38h-25.6V1.58h60.64Z" />
+        <path class="st1" d="M331.88,10H297.66V37h31.17v8.38H297.66V84.26h-9.61V1.58h43.83Z" />
+        <path class="st1" d="M380.92,0q13.89,0,21.18,11t7.29,32q0,20.86-7.26,31.87t-21.21,11q-13.83,0-21.13-11T352.5,43Q352.5,22,359.77,11T380.92,0Zm0,77.4q18.29,0,18.28-34.45T380.92,8.44q-8.91,0-13.57,8.93T362.7,43q0,16.81,4.62,25.63T380.92,77.4Z" />
+        <path class="st1" d="M477.07,84.26h-45V1.58h9.61v74.3h35.39Z" />
+        <path class="st1" d="M537.46,84.26H499.9V75.88h14.24V10H499.9V1.58h37.56V10H523.75V75.88h13.71Z" />
+        <path class="st1" d="M591,0q13.89,0,21.18,11t7.3,32q0,20.86-7.27,31.87T591,85.84q-13.83,0-21.12-11T562.54,43Q562.54,22,569.8,11T591,0Zm0,77.4q18.28,0,18.28-34.45T591,8.44q-8.9,0-13.56,8.93T572.73,43q0,16.81,4.63,25.63T591,77.4Z" />
+      </g>
+    </svg>
+    <div class="name">
+      <h1>MIZUNO NANAMI</h1>
+      <div class="square"></div>
+      <p>2002/graphic/Site design<br>html/css/JavaScript/<br>Photoshop/Illustrator/cinema 4d</p>
+    </div>
+
+    <div class="scroll"></div>
+    <p class="scrollmoji">scroll</p>
+
+
+  </div>
+  <!--背景-->
+
+  <!--<svg id="bg_1" viewBox="0 0 65 62.2">
+  <path d="M32.5,8.5c0-22.6,14.2,6.1,6.8,13.8c7.4-7.7,39.1-3.1,15.3,2.2c23.8-5.3,0.9,17-11.1,10.8c11.9,6.3,17.3,37.9,2.6,15.2
+	c14.7,22.6-13.7,7.7-13.7-7.2c0,14.9-28.4,29.8-13.7,7.2c-14.7,22.6-9.3-9,2.6-15.2C9.5,41.6-13.4,19.2,10.4,24.6
+	c-23.8-5.3,7.9-10,15.3-2.2C18.3,14.6,32.5-14.1,32.5,8.5z">
+    <animate attributeName="d"
+             repeatCount="indefinite"
+             dur="3s"
+             to="M26.2,25C40.1-8.9,62.6-3.1,48.8,11.7C63.5,0.4,75.6,14,51.2,22.4c21.5-3.7,10.3,11.6-2.8,10.4c14.1,4.6,2.7,10.2-7.8,7.3 c11.8,4,0.6,9.1-10.5,6.6c1,4.8,2.6,18-12.4,4.9C8.3,51.3,4.7,35,9.3,27c-5.4-0.7-12.5-0.6-1.1-3.4c-15.4-4.9-5.9-4.8,2.1-3.2 C13.3,11.9,26.1,11.1,26.2,25z" />
+	  <animate attributeName="fill"
+             dur="3s"
+             repeatCount="indefinite"
+             values="#D2527F;#F9BF3B" />
+  </path>
+</svg>-->
+
+  <!--SVG animation ここまで-->
+  <div class="middle">
+
+    <div class="works_title">
+      <p>Works</p>
+    </div>
+
+    <!--slider-->
+    <!--
+      <div id="css-slider">
+        <div class="slider-wrapper">
+          <div class="slide-item"><img src="image/nengalitver.JPG" alt="" /></div>
+          <div class="slide-item"><img src="image/Mackabegamineko.jpg" alt="" /></div>
+          <div class="slide-item"><img src="image/portfolio.jpg" alt="" /></div>
+        </div>
+      </div>
+-->
+    <div class="carousel" data-flickity>
+      <div class="carousel-cell1"></div>
+      <div class="carousel-cell2"></div>
+      <div class="carousel-cell3"></div>
+      <div class="carousel-cell4"></div>
+      <div class="carousel-cell5"></div>
+    </div>
+
+    <script src='https://npmcdn.com/flickity@2/dist/flickity.pkgd.js'></script>
+
+
+    <div class="btniti"><button class="btn btn-3 cursorbig"><a href="Works_grafic.html">More</a></button></div>
+
+  </div>
+  <div class="bottom">
+    <div class="profile_title">Profile</div>
+    <div class="profile_box">
+      <div class="profile_line">
+        <div class="icon">
+          <div class="iconimg slide-bottom"><img src="image/icon.png" alt="" /></div>
+          <h1>Nanami Mizuno</h1>
+          <p>designer ・ engineer</p>
+        </div>
+        <p class="kana lead">2002年愛知県生まれ、<br>頭の大半をデザイン、ドラマ、映画、ものづくりが占めています。<br>デザインが得意。<br>Swift,Ruby,C言語と仲良くなりたい。<br><br>
+          CONTACT : nana.seas2002@gmail.com<br>
+          ADDRESS : Nagoya-shi,Aichi-ken,Japan
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer color">
+    <div class="sns_box">
+      <div class="sns_button twitter cursorbig">
+        <a href="https://twitter.com/i_nanana_i" title="Tweet"><img src="image/twitter.svg" alt="" /></a>
+      </div>
+      <div class="sns_button facebook cursorbig">
+        <a href="https://www.facebook.com/nanami.mizuno.712" title="Facebook"><img src="image/facebook.svg" alt="" /></a>
+      </div>
+    </div>
+    <p class="allright">© MIZUNONANAMI All rights reserved.</p>
+  </div>
+
+  <div class="boeder_left color " style="background-color: rgb(22, 255, 196);"></div>
+  <div class="boeder_right color" style="background-color: rgb(22, 255, 196);"></div>
+  <div class="boeder_top color" style="background-color: rgb(22, 255, 196);"></div>
+  <div class="boeder_bottom color" style="background-color: rgb(22, 255, 196);"></div>
+
+  <!--  </div>-->
+  <!--mofing-->
+
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/anime.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="lib/scrollreveal.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js'></script>
+
+  <script>
+    var
+      cursor = $(".cursor"),
+      follower = $(".follower"),
+      cWidth = 8, //カーソルの大きさ
+      fWidth = 40, //フォロワーの大きさ
+      delay = 10, //数字を大きくするとフォロワーがより遅れて来る
+      mouseX = 0, //マウスのX座標
+      mouseY = 0, //マウスのY座標
+      posX = 0, //フォロワーのX座標
+      posY = 0; //フォロワーのX座標
+
+    //カーソルの遅延アニメーション
+    //ほんの少ーーーしだけ遅延させる 0.001秒
+    TweenMax.to({}, .001, {
+      repeat: -1,
+      onRepeat: function() {
+        posX += (mouseX - posX) / delay;
+        posY += (mouseY - posY) / delay;
+
+        TweenMax.set(follower, {
+          css: {
+            left: posX - fWidth / 2,
+            top: posY - fWidth / 2
+          }
+        });
+        TweenMax.set(cursor, {
+          css: {
+            left: mouseX - cWidth / 2,
+            top: mouseY - cWidth / 2
+          }
+        });
+      }
+    });
+
+    //マウス座標を取得
+    $(document).on("mousemove", function(e) {
+      mouseX = e.pageX;
+      mouseY = e.pageY;
+    });
+
+    $(".cursorbig").on({
+      "mouseenter": function() {
+        cursor.addClass("is-active");
+        follower.addClass("is-active");
+      },
+      "mouseleave": function() {
+        cursor.removeClass("is-active");
+        follower.removeClass("is-active");
+      }
+    });
+    //# sourceURL=pen.js
+
+  </script>
+
+  <script src="lib/jquery.fadethis.min.js"></script>
+  <script>
+    $(window).fadeThis();
+
+  </script>
+
+
+  <script type="text/javascript" src="lib/jquery.textillate.js"></script>
+  <script type="text/javascript" src="lib/jquery.lettering.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <script>
+    $(function() {
+      $('.lead').textillate({
+        //繰り返し
+        loop: false,
+        // アニメーションの間隔時間
+        minDisplayTime: 3000,
+        // アニメーション開始までの遅延時間
+        initialDelay: 1000,
+        // アニメーションの自動スタート
+        autoStart: true,
+
+        // 開始時のアニメーション設定
+        in: {
+          // エフェクトの指定
+          effect: 'fadeInUp',
+          // 遅延時間の指数
+          delayScale: 1.5,
+          // 文字ごとの遅延時間
+          delay: 50,
+          // true:アニメーションをすべての文字に同時適用
+          sync: true,
+          // true:文字表示がランダムな順に表示される
+          shuffle: false
+        },
+
+        // 終了時のアニメーション設定
+        out: {
+          effect: 'fadeOut',
+          delayScale: 1.5,
+          delay: 50,
+          sync: false,
+          shuffle: false
+        }
+      });
+    })
+
+  </script>
+
+  <!--<script src='jquery-2.2.4.min.js'></script>-->
+  <script>
+    $(function() {
+      var $bg = $('.background');
+      var $hamWrapper = $('.hamburger-wrapper');
+      var $hamburger = $hamWrapper.find('.hamburger');
+      var $links = $('.links');
+      var $currLink = $('.curr-link').find('span');
+      var activeLink = 'home';
+
+      $links.find('h2').first().addClass('link-active');
+
+      $hamWrapper.on('click', function() {
+        $bg.toggleClass('background-open');
+        $hamburger.toggleClass('hamburger-open');
+        $links.toggleClass('links-open');
+      });
+
+      $links.find('h2').on('click', function() {
+        activeLink = $(this).data('link');
+        $currLink.text(activeLink);
+        $links.find('h2').removeClass('link-active');
+        $(this).addClass('link-active');
+        $hamWrapper.click();
+      });
+    });
+    //# sourceURL=pen.js
+
+  </script>
+</body>
+
+</html>
